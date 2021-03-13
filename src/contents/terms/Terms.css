@@ -1,0 +1,28 @@
+.terms {
+  width: 100%;
+  padding: 20px;
+  border: 2px solid #1C222B;
+}
+.terms .title {
+  font-size: 18pt;
+}
+.terms .content {
+  font-size: 11pt;
+  margin-top: 5px;
+  height: 483px;
+  overflow-y: auto;
+  color: #676D71;
+}
+.terms .content h6 {
+  font-size: 13pt;
+}
+::-webkit-scrollbar {
+  width: 30px;
+} 
+::-webkit-scrollbar-track {
+  background: url(../../static/images/line_launcher_con_scroll.png) repeat-y 20px 1px;
+}
+::-webkit-scrollbar-thumb {
+  background: url(../../static/images/btn_shortcut_r_tb.png) no-repeat 7px -2px;
+  background-size: cover;
+} 

@@ -1,43 +1,52 @@
-import {useEffect, useRef} from 'react';
-import './App.css';
+import { useContext, useEffect, useCallback } from 'react'
+import { Contents } from './contents'
+import { Background } from './background'
+import { store } from './Store.js'
 
+import './App.css'
 
 function App() {
-  const backgroundAudio = useRef(null);
-  const backgroundVideo = useRef(null);
-  const backgroundVideoSource = useRef(null);
-  const videoNames = ['Title1', 'Title2', 'Title3', 'BG'];
-  let videoIdx = 3;
-
+  const globalState = useContext(store)
+  const {state: {video, menu, type, step}} = globalState
+  const handleKeyPress = useCallback(({keyCode}) => {
+    if (keyCode===88 && step==='ready') {
+      globalState.dispatch({type: 'step', value: 'start'})
+      setTimeout(() => {
+        globalState.dispatch({type: 'step', value: 'connected'})
+      }, 2000)
+    } else if (step==='connected') {
+      if (menu==='play') {
+        if (keyCode===39 && type==='L') {
+          globalState.dispatch({type: 'type', value: 'R'})
+        } else if (keyCode===37 && type==='R') {
+          globalState.dispatch({type: 'type', value: 'L'})
+        } else if (keyCode===88 || keyCode===65) {
+          window.open('https://www.krafton.com/kr/', 'krafton', 1000, 600)
+        }
+      }
+      if (keyCode===38 || keyCode===40) {
+        globalState.dispatch({type: 'menu', value: menu==='play' ? 'terms' : 'play'})
+      }
+      
+    }
+  }, [menu, type, step, globalState]);
+  
   useEffect(() => {
-    if (/Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor)) {
-    }
-  }, []);
+    window.addEventListener('keydown', handleKeyPress);
 
-  function nextVideo() {
-    if (videoIdx < 3) {
-      videoIdx++;
-      backgroundVideo.current.src = '/static/videos/'+videoNames[videoIdx]+'.webm';
-    }
-    backgroundVideo.current.play();
-  }
+    return () => {
+      window.removeEventListener('keydown', handleKeyPress);
+    };
+  }, [handleKeyPress]);
+
   return (
     <>
-      <video
-        autoPlay
-        muted
-        onEnded={nextVideo}
-        ref={backgroundVideo}
-      >
-        <source src={"/static/videos/"+videoNames[videoIdx]+".webm"} type="video/webm" ref={backgroundVideoSource}/>
-        Your browser does not support the video tag.
-      </video>
-      <audio autoPlay loop ref={backgroundAudio}>
-        <source src="/static/sounds/BGM_Launcher.wav" type="audio/wav"/>
-        If you're reading this, audio isn't supported.
-      </audio>
+      <Background></Background>
+      {video===4 &&
+      <Contents></Contents>
+      }
     </>
-  );
+  )
 }
 
-export default App;
+export default App

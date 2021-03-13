@@ -1,0 +1,50 @@
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.contents {
+  position: absolute;
+  left: 0;
+}
+.contents.logo {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contents .logo-text {
+  position: fixed;
+  width: 100%;
+  font-family: ASTOM;
+  font-size: 20pt;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 2px 2px #000000;
+}
+.contents .blicker {
+  cursor: pointer;
+  animation: blinker 1s step-start infinite;
+}
+.contents img {
+  vertical-align: middle;
+}
+.contents .main {
+  display: flex;
+}
+.contents .container {
+  display: flex;
+  background: url(../static/images/bg_launcher_con_light.png) no-repeat 190px 218px;
+}
+.box {
+  display: flex;
+  width: 628px;
+  height: 560px;
+  margin-left: 200px;
+  padding: 20px;
+  background:
+  url(../static/images/bg_launcher_con_light_line.png) no-repeat;
+  background-size: contain;
+  color: #FFFFFF;
+  background-color: #111619;
+  align-self: flex-end;
+}

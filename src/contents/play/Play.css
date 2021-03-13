@@ -1,0 +1,40 @@
+.play {
+  display: flex;
+  flex-direction: column;
+}
+.play .top-line {
+  position: absolute;
+  
+}
+.play div .mainImg {
+  width: 100%;
+}
+.play .title {
+  margin: 10px 0;
+}
+.play .content {
+  padding: 15px 0 0 0;
+  background: url(../../static/images/line_launcher_con.png) repeat-x;
+}
+.play .btns {
+  text-align: center;
+}
+.play .btns img {
+  margin: 0 5px;
+  cursor: pointer;
+}
+.play .btns .off-dot {
+  opacity: .2;
+}
+.play .more {
+  position: relative;
+  cursor: pointer;
+}
+.play .more div{
+  position: absolute;
+  top: -40px;
+  left: 480px;
+}
+.play footer {
+  margin-top: auto;
+}

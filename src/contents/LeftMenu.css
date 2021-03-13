@@ -1,0 +1,70 @@
+.left-menu {
+  width: 560px;
+  height: 850px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+.left-menu img.logo {
+  width: 100%;
+}
+.left-menu .login {
+  width: 80%;
+  padding: 5px 0 5px 20%;
+}
+.left-menu .login div {
+  padding: 10px;
+  background-image: url(../static/images/bg_launcher_login_id.png)
+}
+.left-menu .login img {
+  width: 20px;
+}
+.left-menu .login span {
+  margin-left: 15px;
+}
+.left-menu .select {
+  font-family: ASTOM;
+  font-size: 20pt;
+  margin-top: 30px;
+}
+.left-menu .select .item {
+  display: flex;
+  height: 111px;
+  cursor: pointer;
+}
+.left-menu .select .item.selected {
+  background: 
+  url(../static/images/light_launcher_left.png) no-repeat -36px,
+  url(../static/images/light_launcher_right.png) no-repeat 354px;
+}
+.left-menu .select .item .text {
+  position: absolute;
+  left: 100px;
+  width: 200px;
+  height: 111px;
+  padding-top: 40px;
+}
+.left-menu .select .item.selected .text {
+  font-size: 21pt;
+  left: 154px;
+  background:
+  url(../static/images/light_launcher_mid_1px.png) repeat-x;
+}
+.left-menu .select .item .text .sword {
+  position: absolute;
+  top: -15px;
+  left: -80px;
+  display: none;
+}
+.left-menu .select .item.selected .text .sword {
+  left: -80px;
+  display: block;
+}
+.left-menu .footer {
+  margin-top: auto;
+  padding-left: 150px;
+  font-size: 12pt;
+}
+.left-menu .footer .playBtn {
+  cursor: pointer;
+}
