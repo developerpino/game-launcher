@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.74d9f1dd.chunk.css",
+    "main.js": "/static/js/main.20d744cc.chunk.js",
+    "main.js.map": "/static/js/main.20d744cc.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ec0741dd.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ec0741dd.js.map",
+    "static/js/2.6d71853e.chunk.js": "/static/js/2.6d71853e.chunk.js",
+    "static/js/2.6d71853e.chunk.js.map": "/static/js/2.6d71853e.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.74d9f1dd.chunk.css.map": "/static/css/main.74d9f1dd.chunk.css.map",
+    "static/js/2.6d71853e.chunk.js.LICENSE.txt": "/static/js/2.6d71853e.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/ROBOTO-REGULAR.f25bd059.TTF",
+    "static/media/BG.a1bb687d.webm": "/static/media/BG.a1bb687d.webm",
+    "static/media/BGM_Launcher.360e6aa2.wav": "/static/media/BGM_Launcher.360e6aa2.wav",
+    "static/media/Title1.fffeef69.webm": "/static/media/Title1.fffeef69.webm",
+    "static/media/Title2.e4301725.webm": "/static/media/Title2.e4301725.webm",
+    "static/media/Title3.9904b04f.webm": "/static/media/Title3.9904b04f.webm",
+    "static/media/UI_Button_Fiqurechange.9ff0089c.wav": "/static/media/UI_Button_Fiqurechange.9ff0089c.wav",
+    "static/media/UI_Button_GameStart.2ddc6802.wav": "/static/media/UI_Button_GameStart.2ddc6802.wav",
+    "static/media/UI_Button_Select.4d9caca0.wav": "/static/media/UI_Button_Select.4d9caca0.wav",
+    "static/media/Contents.css": "/static/media/bg_launcher_con_light.40dbeb38.png",
+    "static/media/img_launcher_tera_logo.a936891b.png": "/static/media/img_launcher_tera_logo.a936891b.png",
+    "static/media/LeftMenu.css": "/static/media/light_launcher_right.2c660245.png",
+    "static/media/maskup.b8e1e866.jpg": "/static/media/maskup.b8e1e866.jpg",
+    "static/media/service_moving_info.d486863e.jpg": "/static/media/service_moving_info.d486863e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ec0741dd.js",
+    "static/js/2.6d71853e.chunk.js",
+    "static/css/main.74d9f1dd.chunk.css",
+    "static/js/main.20d744cc.chunk.js"
+  ]
+}
