@@ -5,16 +5,16 @@ import './Play.css'
 
 export const Play = () => {
   const globalState = useContext(store)
-  const {state: {type}} = globalState,
-  changeType = useCallback(item => {
+  const {state: {type}} = globalState
+  const changeType = useCallback(item => {
     globalState.dispatch({type: 'type', value: item})
-  }, [globalState]),
-  clickBtn = useCallback(({target: {dataset: {item}}}) => {
+  }, [])
+  const clickBtn = useCallback(({target: {dataset: {item}}}) => {
     if (typeof item==='string') {
       changeType(item)
     }
-  }, [changeType]),
-  getDotClass = useCallback((item) => {
+  }, [changeType])
+  const getDotClass = useCallback((item) => {
     return typeof item==='string' && item !== type ? 'off-dot' : ''
   }, [type])
 

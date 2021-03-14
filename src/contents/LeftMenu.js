@@ -12,7 +12,7 @@ export const LeftMenu = () => {
   return (
     <div className='left-menu'>
       <div>
-        <img className='logo' src={logo} alt='img_launcher_tera_logo' />
+        <img className='logo' src={logo} alt='big tera logo in launcher' />
       </div>
       <div className='login'>
         <div>
@@ -42,7 +42,7 @@ export const LeftMenu = () => {
           <div
             className='playBtn'
             onClick={()=>{
-              window.open('https://www.krafton.com/kr/', 'krafton', 1000, 600)
+              window.open('https://www.krafton.com/kr/', 'krafton', 1200, 600)
             }}
           >
             <img src={xBTN} alt='x button for select'/> Select

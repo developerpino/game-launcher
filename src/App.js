@@ -21,7 +21,7 @@ function App() {
         } else if (keyCode===37 && type==='R') {
           globalState.dispatch({type: 'type', value: 'L'})
         } else if (keyCode===88 || keyCode===65) {
-          window.open('https://www.krafton.com/kr/', 'krafton', 1000, 600)
+          window.open('https://www.krafton.com/kr/', 'krafton', 1200, 600)
         }
       }
       if (keyCode===38 || keyCode===40) {
@@ -29,7 +29,7 @@ function App() {
       }
       
     }
-  }, [menu, type, step, globalState]);
+  }, [menu, type, step]);
   
   useEffect(() => {
     window.addEventListener('keydown', handleKeyPress);

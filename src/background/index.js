@@ -20,7 +20,7 @@ export const Background = () => {
       backgroundVideo.current.loop = true
     }
     backgroundVideo.current.play()
-   }, [video, backgroundVideo, Videos, globalState])
+   }, [video])
 
   useEffect(() => {
     const audio = new Audio(launcherBGM)
@@ -30,10 +30,10 @@ export const Background = () => {
       if (played !== undefined) {
         played
         .then(() => {
-          console.log('Autoplay started!')
+          console.log('BGM started!')
         })
         .catch(() => {
-          console.log('Autoplay was prevented.')
+          console.log('BGM was prevented from browser.')
         });
       }
       globalState.dispatch({type: 'video', value: video+1})

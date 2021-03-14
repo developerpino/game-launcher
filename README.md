@@ -1,3 +1,17 @@
-# say hello
+# 입력 가능 버튼 매핑
 
-hello, it's me. I am Pino, I like pizza, hamberger, zero coke.
+L1 => ←
+
+R1 => →
+
+ㅁ => a
+
+X => x
+
+# 대응 가능 화면 시나리오
+
+가로 1431px 이상
+
+가로 801px ~ 1430px 
+
+가로 800px 이하
